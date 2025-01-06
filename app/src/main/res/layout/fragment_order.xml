@@ -6,20 +6,19 @@
     tools:context=".OrderFragment">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@android:color/white">
+        android:background="@android:color/white"
+        android:orientation="vertical">
 
         <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="25dp"
-            android:padding="16dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
             <TextView
                 android:id="@+id/header"
@@ -27,16 +26,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Order"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/black" />
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/notificationIcon"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_notification"
-                android:layout_marginEnd="16dp" />
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_notification" />
 
             <ImageView
                 android:id="@+id/chatIcon"
@@ -49,8 +48,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
             android:padding="4dp">
 
             <TextView
@@ -58,10 +57,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@android:color/white"
                 android:gravity="center"
                 android:padding="8dp"
                 android:text="Jadwal"
-                android:background="@android:color/white"
                 android:textColor="@android:color/black" />
 
             <TextView
@@ -91,78 +90,78 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp"
+                    android:layout_margin="4dp"
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/white"
                     android:elevation="4dp"
-                    android:layout_margin="4dp">
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Jadwal Pembersihan Umum / General Cleaning"
-                        android:textSize="16sp"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="31 Okt 2024 16:00"
-                        android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <!-- Jadwal 2 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp"
+                    android:layout_margin="4dp"
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/white"
                     android:elevation="4dp"
-                    android:layout_margin="4dp">
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Jadwal Layanan AC"
-                        android:textSize="16sp"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="01 Nov 2024 15:00"
-                        android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <!-- Jadwal 3 -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp"
+                    android:layout_margin="4dp"
                     android:layout_marginBottom="8dp"
                     android:background="@android:color/white"
                     android:elevation="4dp"
-                    android:layout_margin="4dp">
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Jadwal Vakum Tungau / Hydro Cleaning"
-                        android:textSize="16sp"
-                        android:textColor="@android:color/black" />
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="31 Okt 2024 16:00"
-                        android:textSize="14sp"
-                        android:textColor="@android:color/darker_gray" />
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
                 </LinearLayout>
 
             </LinearLayout>

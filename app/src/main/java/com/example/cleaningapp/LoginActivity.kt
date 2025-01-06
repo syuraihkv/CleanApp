@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener{
             if (txtUsername.text.toString().equals(email)&&
                 txtPassword.text.toString().equals(password)){
-                val intent = Intent(this,AccountActivity::class.java)
+                val intent = Intent(this,HomeActivity::class.java)
                 startActivity(intent)
             }else{
                 Toast.makeText(this,"Login Failed, Check your email and password",
