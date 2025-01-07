@@ -11,6 +11,14 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class LoginActivity : AppCompatActivity() {
+
+    companion object {
+        var username = "wongtulus@amikom.ac.id"
+        var password = "admin"
+
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         val txtPassword:EditText = findViewById(R.id.inputPassword)
         val btnLogin:Button = findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener{
-            if (txtUsername.text.toString().equals(email)&&
+            if (txtUsername.text.toString().equals(username)&&
                 txtPassword.text.toString().equals(password)){
                 val intent = Intent(this,HomeActivity::class.java)
                 startActivity(intent)

@@ -1,40 +1,36 @@
 package com.example.cleaningapp
 
 
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.graphics.Bitmap
+import android.view.*
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView
+import android.widget.Toast
+import androidx.core.graphics.drawable.toBitmap
 import androidx.recyclerview.widget.RecyclerView
 
-class AdapterMenu (private  val lstMenu:List<MenuModel>):RecyclerView.Adapter<AdapterMenu.ViewHolder>(){
-    inner class ViewHolder(v: View):RecyclerView.ViewHolder(v){
-        val imgFotoMenu: ImageView
-        val txtNamaMenu: TextView
-        val context : v.context;
 
-        init {
-            imgFotoMenu = v.findViewById(R.id.imageViewMenu)
-            txtNamaMenu = v.findViewById(R.id.textViewNamaMenu)
-        }
+class AdapterMenu(private val list: ArrayList<MenuModel>) : RecyclerView.Adapter<AdapterMenu.ViewHolder>() {
+
+    inner class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
+        val imgFotoMenu: ImageView = v.findViewById(R.id.gambar)
+        val txtNamaMenu: TextView = v.findViewById(R.id.namaMenu)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val layoutInflater = LayoutInflater.from(parent?.context)
-        val cellForRow = LayoutInflater.inflate(R.id.card_display_menu, parent, false)
-
-        return MenuViewHolder(cellForRow)
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val cellForRow = layoutInflater.inflate(R.layout.card_layout_beranda, parent, false)
+        return ViewHolder(cellForRow)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val  modelMenu = lstMenu[position]
+        val modelMenu = list[position]
         holder.imgFotoMenu.setImageResource(modelMenu.gambar)
         holder.txtNamaMenu.text = modelMenu.namaMenu
     }
 
     override fun getItemCount(): Int {
-        return listMenu.size
+        return list.size
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/fragmentBeranda"
+        android:title="Beranda"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item android:id="@+id/fragmentOrder"
+        android:title="Order"
+        android:icon="@drawable/baseline_order_24"/>
+
+    <item android:id="@+id/fragmentPaket"
+        android:title="Paket"
+        android:icon="@drawable/baseline_paket_24"/>
+
+    <item android:id="@+id/fragmentPrepaid"
+        android:title="Prepaid"
+        android:icon="@drawable/baseline_prepaid_24"/>
+
+    <item android:id=   "@+id/fragmentAccount"
+        android:title="Akun"
+        android:icon="@drawable/baseline_account_24"/>
+</menu>

@@ -1,29 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
-    <!-- Logo Image -->
-    <ImageView
-        android:id="@+id/logoimage"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/logo_home_cleaning" /> <!-- Adjust vertical bias as needed -->
-    <Button
-        android:id="@+id/btnNext"
-        android:layout_width="250dp"
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:text="NEXT"
-        android:textSize="18dp"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-condensed"
-        android:backgroundTint="#FF5722"/>
-</LinearLayout>
+        app:fabCradleMargin="5dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="#999999">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

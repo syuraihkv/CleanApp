@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CleaningApp"
         tools:targetApi="35">
         <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaketActivity"
             android:exported="false" />
         <activity
