@@ -68,9 +68,9 @@
         <!-- List of Packages -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_packages"
+            android:layout_marginTop="100dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constrainTop_toBottomOf="@+id/textpaket"
             android:clipToPadding="false"
             android:padding="8dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
